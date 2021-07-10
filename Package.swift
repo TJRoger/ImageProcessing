@@ -19,8 +19,7 @@ let package = Package(
             "GPUImage"
             ],
             resources: [
-            .copy("Resources/Images/WID-small.jpg"),
-            .copy("README.md")
+            .process("Resources/Images/WID-small.jpg"),
             ]),
         .testTarget(
             name: "gpuimageTests",
